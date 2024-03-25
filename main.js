@@ -1,16 +1,18 @@
 import { World } from "scripts/World/world.js";
 
-async function main(){
-    const container = document.querySelector('canvas.webgl');
-    const init = new World(container);
-    await init.load_assets();
-    init.start();
-    const body = document.body;
+  const body = document.body;
 
 // Change the background color
 body.style.backgroundColor = 'lightblue';
     // init.addEventListners();
 }
+
+async function main(){
+    const container = document.querySelector('canvas.webgl');
+    const init = new World(container);
+    await init.load_assets();
+    init.start();
+  
 
 const learnMoreButtons = document.querySelectorAll('.LearnMoreButton');
 const popup = document.querySelector('.popUps');
