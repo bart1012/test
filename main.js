@@ -5,6 +5,10 @@ async function main(){
     const init = new World(container);
     await init.load_assets();
     init.start();
+    const body = document.body;
+
+// Change the background color
+body.style.backgroundColor = 'lightblue';
     // init.addEventListners();
 }
 
